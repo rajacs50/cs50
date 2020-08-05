@@ -1,0 +1,35 @@
+textarea {
+    min-height: 400px;
+}
+
+.mailbox {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.mailbox .recip {
+    font-weight: bold;
+}
+
+.read-view {
+    font-weight: bold;
+}
+
+.email-read-view {
+    font-family: sans-serif;
+}
+
+div > .mailbox[data-read='true']{
+    background-color: grey;
+    color: white;
+}
+
+div > .mailbox[data-read='true'] .text-muted {
+    color: white !important;
+}
+
+div > .mailbox[data-read='false']{
+    background-color: white;
+}
