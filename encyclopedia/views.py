@@ -30,7 +30,9 @@ def wiki(request, title):
 
 def search(request, query):
     entries = util.list_entries()
-    results = [sub for sub in entries if query in sub.lower()]
+    print(entries)
+    results = [sub for sub in entries if query.lower() in sub.lower()]
+    print(results)
     return render(request, "encyclopedia/search.html", {'results': results})
 
 
